@@ -5,7 +5,11 @@
 
 *{
    font-family: "Work Sans", sans-serif;
+
 }
 .work-sans {
   font-family: "Work Sans", sans-serif;
+}
+button,li{
+    cursor: pointer;
 }
