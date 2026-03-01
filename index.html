@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style/daisyui@5.css"> -->
+    <link rel="stylesheet" href="style/daisyui@5.css">
     <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css">
     <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/solid.css">
     <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/duotone.css">
@@ -221,19 +221,19 @@
         </div>
         <div class="w-[40%] ">
             <div class="flex justify-between gap-4">
-                <input type="text" placeholder="Enter Your First Name" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="">
-                <input type="text" placeholder="Enter Your Last Name" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="">
+                <input type="text" placeholder="Enter Your First Name" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="first-name">
+                <input type="text" placeholder="Enter Your Last Name" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="last-name">
             </div>
 
-            <input type="text" placeholder="Enter Your Phone number" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="">
+            <input type="text" placeholder="Enter Your Phone number" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="phone-number">
             
-            <input type="email" placeholder="Enter Your Email address" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="">
-            <input type="text" placeholder="Message Title" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="">
+            <input type="email" placeholder="Enter Your Email address" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="email">
+            <input type="text" placeholder="Message Title" class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="message-title">
             
             
-            <textarea class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="" placeholder="Enter your message" cols="30" rows="6"></textarea>
+            <textarea class="px-4 py-2.5 my-3 w-full rounded-2xl border-[#FF900E] border-2" name="" id="message" placeholder="Enter your message" cols="30" rows="6"></textarea>
 
-            <button id="btn"  class="bg-[#FF900E] overflow-hidden  cursor-pointer text-white px-6 my-2 py-3 rounded font-semibold hover:scale-[.9] active:translate-y-1 text-center block mx-auto">Submit <i class="fa-sharp-duotone fa-solid transition-all delay-200 fa-paper-plane-top"></i> </button>
+            <button id="btn"  class="bg-[#FF900E] overflow-hidden active:outline-0  cursor-pointer text-white px-6 my-2 py-3 rounded font-semibold hover:scale-[.9] active:translate-y-1 text-center block mx-auto">Submit <i class="fa-sharp-duotone fa-solid transition-all delay-200 fa-paper-plane-top"></i> </button>
         </div>
     </section>
 </section>
@@ -242,9 +242,22 @@
 
     <footer class="">
         <section class="text-center w-[90%] mb-20  rounded-3xl m-auto bg-[#FFF4E7] p-6">
-            <p>All rights reserved copyright@2023 startup landing page design</p>
+            <p>copyright@2024-<span id="date"></span> rights reserved and Developed by Jony Mia </p>
         </section>
     </footer>
+
+
+    <!-- You can open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-soft hover:text-white btn-error absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Alert!</h3>
+    <p class="py-4">Kindly fill this form to contact</p>
+  </div>
+</dialog>
 
     <script src="style/browser@4.js"></script>
     <script src="main.js"></script>
