@@ -13,3 +13,10 @@
 button,li{
     cursor: pointer;
 }
+::-webkit-scrollbar{
+  display: none;
+}
+ *{
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
+ }
